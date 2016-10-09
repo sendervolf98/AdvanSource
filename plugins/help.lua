@@ -15,9 +15,9 @@ if is_momod(msg) or is_owner(msg) or is_sudo(msg) or is_vip(msg) then
     local channel = two:read("*all")
   HelpSuper = io.open("./helps/HelpSuper.txt", "r")
   help_text_super = HelpSuper:read("*all")
-    send_msg("channel#id"..msg.to.id, help_text_super..'\nPowered by '..team..'\n<a href="'..channel..'">Join our channel :)</a>', ok_cb, false)
+    send_msg("channel#id"..msg.to.id, help_text_super..'\nPowered by saeed alikhani'..team..'\n<a href="'..channel..'">powred by saeed alikhani :)</a>', ok_cb, false)
   elseif msg.to.type == 'channel' and not is_super_group(msg) then
-    return "SupreGroup is not added!"
+    return "سوپر گروه اضافه نشذه است!"
   end
 	
     if msg.to.type == 'chat' and is_group(msg) then
